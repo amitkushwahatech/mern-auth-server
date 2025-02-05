@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // API EndPoint
 
-app.get('/', (req,res)=> {res.send("API is Working successfully. Good work Keeo it keep making progrees")});
+app.get('/', (req,res)=> {res.send("API is Working successfully. Good work Keep it keep making progrees")});
 app.use('/api/auth', authRouter)
 app.use('/api/user', userRouter)
 app.listen(port,()=>{
