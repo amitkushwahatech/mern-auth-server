@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 4000
 connectDB();
 
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['http://localhost:5173','https://mern-auth-frontend-five.vercel.app/']
 
 app.use(express.json());
 app.use(cookieParser());
@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // API EndPoint
 
-app.get('/', (req,res)=> {res.send("API is Working successfully")});
+app.get('/', (req,res)=> {res.send("API is Working successfully. Good work Keeo it keep making progrees")});
 app.use('/api/auth', authRouter)
 app.use('/api/user', userRouter)
 app.listen(port,()=>{
